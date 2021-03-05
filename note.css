@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    counter-reset: section;
+}
+
+.header-div {
+    width: 1000px;
+    height: 250px;
+    background-color: aliceblue;
+}
+
+#flex {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#inptext {
+    width: 700px;
+    height: 40px;
+   
+}
+
+#save {
+    width: 100px;
+    height: 27px;
+    background: forestgreen;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+}
+
+#span-head {
+    color: limegreen;
+    font-family: 'Courier New', Courier, monospace;  
+}
+
+.action-note {
+    display: flex;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#action {
+    margin-left: 890px;
+}
+
+#note {
+    margin-left: 5px;
+}
+
+#list-tag{
+    display: flex;
+    width: 1010px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.div-tag {
+    width: 800px;
+    cursor: ponter;
+}
+
+.div-tag::before{
+    counter-increment: section;
+    content: " " counter(section) ". ";
+}
+
+
+.modify {
+  margin-left: 85px;
+  background-color: rgba(50, 205, 50, 0.685);
+  width: 60px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 14px;  
+}
+
+.erase {
+    margin-left: 5px;
+    background-color: rgba(255, 0, 0, 0.52);
+    color: white;
+    font-size: 14px;
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.fill.dragging {
+    opacity: .5;
+    background-color: red;
+}
+
+  li.drag-sort-active {
+      background-color: floralwhite;
+  }
+
+  @media  (max-width: 450px){
+      body {
+          font-size: 2.9rem;
+          background-color: rgb(231, 222, 205);
+      }
+
+      .list-tag{
+          display: flex;
+          flex-direction: column;
+          width: 370px;
+      }
+
+      #inptext {
+          width: 80%
+      }
+
+      #action {
+        margin-left: 720px;
+    }
+
+    #save {
+        width: 20%;
+        height: 50px;
+        border-radius: 1.5rem;
+        font-weight:bolder;
+        font-size: 2.5rem;
+    }
+  }
+  
