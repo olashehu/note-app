@@ -103,7 +103,7 @@ body{
   @media  (max-width: 450px){
       body {
           font-size: 2.9rem;
-          background-color: rgb(231, 222, 205);
+          background-color: whitesmoke;
       }
 
       .list-tag{
