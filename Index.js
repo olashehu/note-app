@@ -40,7 +40,7 @@ const existNote = notes.map(note => {
 
 //This function only pushing my input value to my notes array and set/save it to local storage. 
 addNote.addEventListener('click', () =>{
-    if(textInput.value == "") {
+    if(textInput.value == "" && textInput.value.length < 0) {
         alert("Sorry! You can't add empty note")
         return
     }
