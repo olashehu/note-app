@@ -99,33 +99,3 @@ body{
   li.drag-sort-active {
       background-color: floralwhite;
   }
-
-  @media  (max-width: 450px){
-      body {
-          font-size: 2.9rem;
-          background-color: whitesmoke;
-      }
-
-      .list-tag{
-          display: flex;
-          flex-direction: column;
-          width: 370px;
-      }
-
-      #inptext {
-          width: 80%
-      }
-
-      #action {
-        margin-left: 720px;
-    }
-
-    #save {
-        width: 20%;
-        height: 50px;
-        border-radius: 1.5rem;
-        font-weight:bolder;
-        font-size: 2.5rem;
-    }
-  }
-  
